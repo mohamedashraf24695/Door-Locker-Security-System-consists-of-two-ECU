@@ -92,7 +92,7 @@ int main(void) {
 
 				if (check_status == TRUE) {
 
-					MSG("Door is UnLocking");
+					MSG("Door UnLocking");
 
 					uint8 Motor_finish = UART_recieveByte();
 
