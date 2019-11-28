@@ -190,7 +190,8 @@ uint8 Recieve_Option_Select(void) {
  ************************************************************************************/
 void Control_door(uint8 open_time, uint8 wait_time) {
 
-	Count_sec(wait_time);
+	Count_sec(0);
+	
 	SET_BIT(MOTOR_PORTX, MOTOR_PIN_1);
 	CLEAR_BIT(MOTOR_PORTX, MOTOR_PIN_2);
 	Count_sec(open_time);
